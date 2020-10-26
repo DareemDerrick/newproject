@@ -5,31 +5,46 @@
 }
 
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Images/YAPOfficialRBLogo.png);
         height: 100vh;
-        line-height: 1.6;
+        /*line-height: 1.6;
         background-size: cover;
-        background-position: center;   
+        background-position: center;*/ 
 }
 
+.container{
+    width: 100%;
+    height: 100%;
+    /* CSS Smooth Scroll Feature */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 
-ul li.active a{
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 60px;
+
+}
+
+.navbar ul li.active a{
     background-color: #40a8c4;
     color: rgb(255, 0, 0);
 }
 
-ul{
+.navbar ul{
     float: right;
     list-style-type: none;
     margin: 25px;
     
 }
 
-ul li{
+.navbar ul li{
     display: inline-block;
 }
 
-ul li a{
+.navbar ul li a{
     text-decoration: aqua;
     color: #40a8c4;
     padding: 5px 20px;
@@ -37,16 +52,16 @@ ul li a{
     transition: 0.6s ease;
 }
 
-ul li a:hover{
+.navbar ul li a:hover{
     background-color: #40a8c4;
     color: rgb(255, 0, 0);
 }
 
 .title{
-    position: absolute;
+    position: unset;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 35%;
+    transform: translate(0%, -50%);
 }
 
 .title h1{
@@ -60,9 +75,9 @@ ul li a:hover{
 
 .button{
     position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 57%;
+    left: 35%;
+    transform: translate(0%, -50%);
 }
 
 .btn{
@@ -76,4 +91,29 @@ ul li a:hover{
 .btn:hover{
     background-color: #40a8c4;
     color: rgb(255, 0, 0);
+}
+
+section{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Images/YAPOfficialRBLogo.png);
+    height: 100vh;
+    line-height: 1.6;
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    
+}
+section hi{
+    font-size: 4rem;
+}
+
+section p{
+    font-size: 1.5rem;
 }
